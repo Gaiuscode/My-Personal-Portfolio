@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Epilogue&family=Poppins:wght@200;300;400;500;600&family=Space+Mono:wght@700&display=swap');
 :root
 {
@@ -57,6 +58,10 @@ ul
 {
     padding-left: 15px;
     padding-right: 15px;
+}
+.main-container
+{
+    position: relative;
 }
 .container 
 {
@@ -133,7 +138,7 @@ ul
     box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
 }
 /* aside */
-.aside
+#aside
 {
     width: 270px;
     background-color: var(--bg-black-100);
@@ -148,14 +153,14 @@ ul
     align-items: center;
     z-index: 10;
 }
-.aside .logo
+#aside .logo
  {
     position: absolute;
     top: 50px;
     font-size: 30px;
     text-transform: capitalize;
 }
-.aside .logo a
+#aside .logo a
 {
     color: var(--text-black-900);
     font-weight: 700;
@@ -164,12 +169,12 @@ ul
     letter-spacing: 5px;
     position: relative;
 }
-.aside .logo a span
+#aside .logo a span
 {
     font-family: 'clicker script', cursive;
     font-size: 40px;
 }
-.aside .logo a::before
+#aside .logo a::before
 {
     content: '';
     position: absolute;
@@ -180,7 +185,7 @@ ul
     bottom: 0;
     left: 0;
 }
-.aside .logo a::after
+#aside .logo a::after
 {
     content: '';
     position: absolute;
@@ -191,7 +196,7 @@ ul
     top: 0;
     right: 0;
 }
-.aside .nav-toggler
+#aside .nav-toggler
 {
     height: 40px;
     width: 45px;
@@ -206,7 +211,7 @@ ul
     align-items: center;
     justify-content: center;
 }
-.aside .nav-toggler span
+#aside .nav-toggler span
 {
     height: 2px;
     width: 18px;
@@ -214,7 +219,7 @@ ul
     display: inline-block;
     position: relative;
 }
-.aside .nav-toggler span::before
+#aside .nav-toggler span::before
 {
     content: '';
     height: 2px;
@@ -224,7 +229,7 @@ ul
     top: -6px;
     left: 0;
 }
-.aside .nav-toggler span::after
+#aside .nav-toggler span::after
 {
     content: '';
     height: 2px;
@@ -234,15 +239,46 @@ ul
     top: 6px;
     left: 0;
 }
-.aside .nav{
+.navBar
+{
+    position: relative;
+}
+/* #sideNav {
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    right: -250px;
+    top: 0;
+    z-index: 2;
+    transition: 0.5s;
+} */
+#manuBtn {
+    width: 50px;
+    height: 50px;
+    background: var(--skin-color);
+    text-align: center;
+    position: fixed;
+    left: 2rem;
+    top: -5px;
+    right: 30px;
+    top: 20px;
+    border-radius: 3px;
+    z-index: 10;
+    cursor: pointer;
+}
+#manuBtn img {
+    width: 25px;
+    margin-top: 15px;
+}
+#aside .nav{
     margin-top: 50px;
 }
-.aside .nav li 
+#aside  .nav li 
 {
     margin-bottom: 20px;
     display: block;
 }
-.aside .nav li a 
+#aside .nav li a 
 {
     font-size: 16px;
     font-weight: 600;
@@ -251,25 +287,15 @@ ul
     color: var(--text-black-900);
     padding: 5px 15px;
 }
-.aside .nav li a.active
+#aside .nav li a.active
 {
     color: var(--skin-color);
 }
-.aside .nav li a i{
+#aside .nav li a i{
     margin-right: 15px;
 }
-#sideNav {
-    width: 250px;
-    height: 100vh;
-    position: fixed;
-    right: -250px;
-    top: 0;
-    background: #005f96;
-    z-index: 2;
-    transition: 0.5s;
- } 
 
- nav ul li {
+nav ul li {
     margin: 50px 20px;
 }
 
@@ -277,19 +303,6 @@ nav ul li a {
     color: #fff;
 }
 
-#manuBtn {
-    width: 50px;
-    height: 50px;
-    background: var(--bg-black-100);
-    text-align: center;
-    position: fixed;
-    right: 30px;
-    top: 20px;
-    border-radius: 3px;
-    z-index: 3;
-    cursor: pointer;
-}
-home 
 .home
 {
     min-height: 100vh;
@@ -303,8 +316,13 @@ home
 }
 h3.hello
 {
+    color: var(--text-black-700);
     font-size: 28px;
     margin: 15px 0;
+}
+h3.my-profession
+{
+    color: var(--text-black-700);
 }
 h3.hello span {
     font-family: 'Clicker Script', cursive;
@@ -740,10 +758,10 @@ h3.hello span {
     padding: 0 50px;
 }
 @media (max-width:1199px) {
-    .aside
+    /* #aside
     {
         left: -270px;
-    }
+    } */
     .main-content
     {
         padding-left: 0;
