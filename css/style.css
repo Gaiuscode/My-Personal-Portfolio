@@ -757,11 +757,13 @@ h3.hello span {
     height: 50px;
     padding: 0 50px;
 }
-@media (max-width:2500px) {
+
+@media (max-width:2500px) and (min-width:1200px) {
     #manuBtn{
         display: none;
     }
 }
+
 @media (max-width:1199px) {
     #aside
     {
