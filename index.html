@@ -20,31 +20,30 @@
 </head>
 
 <body>
-     <!-- ===Aside Start===-->
-    <div class="sidebar">
-      <div id="manuBtn">
-         <span></span>
-         <span></span>
-         <span></span>
-      </div>
-      <div id="aside">
-          <div class="logo">
-              <a href="#"><span>G</span>kay</a>
-          </div>
-          <div class="nav-toggler">
-              <span></span>
-          </div>
-          <ul class="nav">
-              <li><a href="#home" class="active"><i class="fa fa-home"></i>Home</a></li>
-              <li><a href="#about"><i class="fa fa-user"></i> About</a></li>
-              <li><a href="#services"><i class="fa fa-list"></i> Services</a></li>
-              <li><a href="#portfolio"><i class="fa fa-briefcase"></i> Portfolio</a></li>
-              <li><a href="#contact"><i class="fa fa-comments"></i> Contact</a></li>
-          </ul>
-      </div>
-    </div>
     <!-- === Main container Start === -->
     <div class="main-container">
+        <div class="sidebar active">
+            <div class="aside">
+                <div class="logo">
+                    <a href="#"><span>G</span>kay</a>
+                </div>
+                <div class="nav-toggler">
+                    <span></span>
+                </div>
+                <ul class="nav">
+                    <li><a href="#home" class="active"><i class="fa fa-home"></i>Home</a></li>
+                    <li><a href="#about"><i class="fa fa-user"></i> About</a></li>
+                    <li><a href="#services"><i class="fa fa-list"></i> Services</a></li>
+                    <li><a href="#portfolio"><i class="fa fa-briefcase"></i> Portfolio</a></li>
+                    <li><a href="#contact"><i class="fa fa-comments"></i> Contact</a></li>
+                </ul>
+            </div>
+            <div class="manuBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
         <!-- === Main Content ===-->
         <div class="main-content">
             <!-- === Home Section Start === -->
@@ -448,23 +447,11 @@
     <!-- === style switcher end === -->
     <!-- === JS files ==== -->
 
-    <!-- <script>
-        var manuBtn = document.getElementById('manuBtn')
-        var aside = document.getElementById('aside')
-        var menu = document.getElementById('menu')
-
-        aside.style.left = "-270px";
-        manuBtn.onclick = function () {
-            if (aside.style.left == "-270px") {
-                aside.style.left = "0";
-                menu.src = "images/menu.png";
-            }
-            else {
-                aside.style.left = "-270px";
-                menu.src = "images/menu.png";
-            }
-        }
-    </script> -->
+    <script>
+        document.querySelector(".sidebar .manuBtn").addEventListener("click",function(){
+            document.querySelector(".sidebar").classList.toggle("active");
+        });
+    </script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
     <script src="js/script.js"></script>
