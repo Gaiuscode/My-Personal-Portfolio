@@ -2,19 +2,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Epilogue&family=Poppins:wght@200;300;400;500;600&family=Space+Mono:wght@700&display=swap');
 :root
 {
-    --bg-black-900:#f2f2fc;
-    --bg-black-100:#fdf9ff;
-    --bg-black-50:#e8dfec;
-    --text-black-900:#302e4d;
-    --text-black-700:#504e70;
-}
-body.dark
-{
     --bg-black-900:#151515;
     --bg-black-100:#222222;
     --bg-black-50:#393939;
     --text-black-900:#ffffff;
     --text-black-700:#e9e9e9;
+
+}
+body.dark
+{
+    --bg-black-900:#f2f2fc;
+    --bg-black-100:#fdf9ff;
+    --bg-black-50:#e8dfec;
+    --text-black-900:#302e4d;
+    --text-black-700:#504e70;
 }
 body
 {
@@ -259,7 +260,7 @@ ul
     top: 0px;
     right: -50px;
     top: 15px;
-    background: var(--skin-color);
+    /* background: var(--skin-color); */
     border-radius: 3px;
     z-index: 10;
     cursor: pointer;
