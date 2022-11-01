@@ -56,6 +56,7 @@ ul
     padding-left: 15px;
     padding-right: 15px;
 }
+/* container */
 .main-container
 {
     position: relative;
@@ -653,7 +654,7 @@ h3.hello span {
 }
 .service .service-item .service-item-inner h4
 {
-    font-size: 19px;
+    font-size: 18px;
     margin: 15px;
     color: var(--text-black-900);
     font-weight: 700;
